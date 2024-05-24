@@ -104,6 +104,7 @@ function App() {
         });
         await transaction.wait();
       } catch (e) {
+        alert(e);
         // console.log("DDDD : ", e, e.toString());
         if (isError(e, "CALL_EXCEPTION")) {
           // The Type Guard has validated this object
